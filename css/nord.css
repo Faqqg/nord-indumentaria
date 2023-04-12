@@ -25,7 +25,7 @@
 
 header {
     height: 520px;
-    background-image: url('/imagenes/background-header.jpg');
+    background-image: url('/nord-indumentaria/imagenes/background-header.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -555,7 +555,7 @@ ul {
     margin-top: 100px !important;
     height: 700px;
     background-position: center;
-    background-image: url('/material/showroom-bg.jpg');
+    background-image: url('/nord-indumentaria/material/showroom-bg.jpg');
     background-size: cover;
     padding: 70px;
 }
@@ -642,7 +642,7 @@ ul {
 
 .header-productos {
     height: 450px;
-    background-image: url(/imagenes/header-productos.jpg);
+    background-image: url(/nord-indumentaria/imagenes/header-productos.jpg);
     background-size: cover;
     background-position: bottom;
     padding: 20px;
