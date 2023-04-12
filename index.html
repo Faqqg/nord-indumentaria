@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nord.css">
+    <link rel="shortcut icon" href="imagenes/logonord.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Nord Indumentaria</title>
+</head>
+
+<body>
+
+    <!-- <nav class="navegador">
+        <div class="titulo-nav">
+            <div class="animate__animated animate__flipInX">
+                <a href="index.html"><img class="logo-header" src="imagenes/logonord.png" alt="logo de la pagina"></a>
+                <a href="index.html"><img class="titulo-header" src="imagenes/titulo-header.png"
+                        alt="titulo de la pagina"></a>
+            </div>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+            <a href=""><img src="imagenes/search-icon.png" alt=""></a>
+        </form>
+
+        <div class="iconos-nav">
+            <img src="imagenes/user-icon.png" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></img>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="login-box">
+                        <h2>Ingresar</h2>
+                        <form>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Nombre de usuario</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required="">
+                                <label>Contraseña</label>
+                            </div>
+                            <a href="index.html" class="account-box">
+                                <h4>¿OLVIDASTE LA CONTRASEÑA?</h4>
+                            </a>
+
+
+                            <div class="submit-box">
+                                <input type="submit" value="Acceder">
+                            </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <a href=""><img src="imagenes/cart-icon.png" alt=""></a>
+        </div>
+    </nav>  -->
+
+
+
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <div class="animate__animated animate__flipInX">
+                <a href="index.html"><img class="logo-header" src="imagenes/logonord.png" alt="logo de la pagina"></a>
+                <a href="index.html"><img class="titulo-header" src="imagenes/titulo-header.png"
+                        alt="titulo de la pagina"></a>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="search-icon" type="submit"><img style="max-width: 25px;" src="/imagenes/search-icon.png"
+                        alt=""></button>
+            </form>
+            <div class="iconos-nav">
+                <img style="width: 65px; margin: 3px;" src="imagenes/user-icon.png" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                </img><a href=""><img style="width: 65px; margin: 3px;" src="imagenes/cart-icon.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span><img style="width: 23px;" src="/imagenes/toggler-icon2.png" alt=""></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 style="font-family: 'Poppins', sans-serif;" class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Nuestra tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Carrito</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif; " class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/paginas/productos/buzos.html">Buzos</a></li>
+                                <li><a class="dropdown-item" href="/paginas/productos/shorts.html">Shorts</a></li>
+                                <li><a class="dropdown-item" href="/paginas/productos/remeras.html">Remeras</a></li>
+                                <li><a class="dropdown-item" href="/paginas/productos/sneakers.html">Sneakers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Asistencia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/paginas/footer/envios.html">Envios</a></li>
+                                <li><a class="dropdown-item" href="/paginas/footer/ventas-p-mayor.html">Ventas por mayor</a></li>
+                                <li><a class="dropdown-item" href="/paginas/footer/preg-frecuentes.html">Preguntas frecuentes</a></li>
+                                <li><a class="dropdown-item" href="/paginas/footer/p-de-cambios.html">Politica de cambios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <header>
+
+        <!-- <div class="carousel-header">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/img-packs-carousel.jpg" class="d-block w-100" alt="imagen carousel de packs">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/img-outfits-carousel.jpg" class="d-block w-100"
+                            alt="imagen carousel de outfits">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/img-ofertas-carousel.jpg" class="d-block w-100"
+                            alt="imagen carousel de ofertas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> -->
+
+    </header>
+
+    <main>
+        <div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper-wrapper d-md-flex">
+                        <div class="service-item-container col-md swiper-slide p-0 px-md-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="imagenes/envios-icon.png" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p><b>Enviós a todo el país</b> <br>
+                                        Noviembre de envios gratis</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service-item-container col-md swiper-slide p-0 px-md-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="imagenes/cards-icon.png" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p><b>Cuotas de 3,6 y 12</b><br>
+                                        12 cuotas s/Interés con tu compra superior a $50.000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-item-container col-md swiper-slide p-0 px-md-3">
+                            <div class="row align-items-center">
+                                <div class="col-auto">
+                                    <img src="imagenes/wsp-icon.png" alt="">
+                                </div>
+                                <div class="col-7">
+                                    <p><b>Contacto</b><br>
+                                        Si tenes dudas, nuestros asistentes en ventas te van a asesorar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="titulo-main">
+            <img src="./imagenes/recuadro-title-destacados.jpg" alt="">
+
+        </div>
+
+
+
+
+        <!-- 
+        <div class="row-remeras">
+            <div class="col">
+                <div class="card">
+
+                    <div class="new">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    <img class="card-remera" src="productos-img/adidas-Forum-Low-Bad-Bunny-Back-to-School-1.jpg"
+                        width="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Forum Bad Bunny</h5>
+                        <p class="card-text">$44.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="new">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    <img class="card-remera" src="productos-img/Supreme-Arc-Water-Short-Brown.jpg" width="250"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Short Supreme Brown</h5>
+                        <p class="card-text">$25.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="new">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    <img class="card-remera"
+                        src="productos-img/The-North-Face-1996-Retro-Nuptse-700-Fill-Packable-Jacket-Sulphur-Spring-Green.jpg"
+                        width="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The North Face Retro Nuptse</h5>
+                        <p class="card-text">$64.999</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="new">
+                        <span class="badge bg-danger">NEW</span>
+                    </div>
+                    <img class="card-remera" src="productos-img/Nike-SB-x-Samborghini-Hoody-Black.jpg" width="250"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoodie Nike Samborghini</h5>
+                        <p class="card-text">$27.766</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-remeras">
+
+            <div class="card">
+
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Anti-Social-Social-Club-x-Undefeated-Paranoid-Olive-Tee.jpg"
+                    width="250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Anti Social Social Club Paranoid</h5>
+                    <p class="card-text">$14.999</p>
+                </div>
+            </div>
+
+
+
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Nike-Dunk-Low-Essential-Paisley-Pack-Worn-Blue-W.jpg"
+                    width="250" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Dunk Low</h5>
+                    <p class="card-text">$32.900</p>
+                </div>
+            </div>
+
+
+
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/drew-house-fire-hoodie-black.jpg" width="250"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hoodie Drew House Fire</h5>
+                    <p class="card-text">$45.000</p>
+                </div>
+            </div>
+
+
+
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Drew-Mascot-Pool-Short-Black.jpg" width="250"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Short Drew Mascot Pool</h5>
+                    <p class="card-text">$24.000</p>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+
+ -->
+
+        <!-- NUEVO -->
+
+        <div class="prod-content">
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/adidas-Forum-Low-Bad-Bunny-Back-to-School-1.jpg" width="300"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Adidas Forum Bad Bunny</h5>
+                    <p class="card-text">$44.000</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Supreme-Arc-Water-Short-Brown.jpg" width="300"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Short Supreme Brown</h5>
+                    <p class="card-text">$25.000</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera"
+                    src="productos-img/The-North-Face-1996-Retro-Nuptse-700-Fill-Packable-Jacket-Sulphur-Spring-Green.jpg"
+                    width="300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The North Face Retro Nuptse</h5>
+                    <p class="card-text">$64.999</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Nike-SB-x-Samborghini-Hoody-Black.jpg" width="300"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hoodie Nike Samborghini</h5>
+                    <p class="card-text">$27.766</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Anti-Social-Social-Club-x-Undefeated-Paranoid-Olive-Tee.jpg"
+                    width="300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Anti Social Social Club Paranoid</h5>
+                    <p class="card-text">$14.999</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Nike-Dunk-Low-Essential-Paisley-Pack-Worn-Blue-W.jpg"
+                    width="300" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nike Dunk Low</h5>
+                    <p class="card-text">$32.900</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/drew-house-fire-hoodie-black.jpg" width="300"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hoodie Drew House Fire</h5>
+                    <p class="card-text">$45.000</p>
+                </div>
+            </div>
+            <div class="card-tres">
+                <div class="new">
+                    <span class="badge bg-danger">NEW</span>
+                </div>
+                <img class="card-remera" src="productos-img/Drew-Mascot-Pool-Short-Black.jpg" width="300"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Short Drew Mascot Pool</h5>
+                    <p class="card-text">$24.000</p>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons group -->
+        <!-- 
+            <div class="container container-productos">
+                <div class="row row-productos">
+                    <div class="productos-general">
+                        <div class="col-auto">
+                            <div class="productos">
+                                <a href="/paginas/productos/sneakers.html">
+                                    <img src="/imagenes/sneakers-presentacion.jpg"  style="width:100%;" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto col-productos-2">
+                        <div class="productos-2">
+                            <a href="/paginas/productos/buzos.html">
+                                
+                                <img src="/imagenes/buzos-presentacion.jpg"  style="width:100%;" alt="">
+                            </a>
+                            <a href="/paginas/productos/remeras.html">
+                                
+                                <img src="/imagenes/remeras-presentacion.jpg" style="width:100%;" alt="">
+                            </a>
+                            <div>
+                                <a href="/paginas/productos/shorts.html">
+                                    
+                                    <img src="/imagenes/shorts-presentacion.jpg"  style="width:100%;" alt="">
+                                </a>
+                                <a href="/paginas/productos/camperas.html">
+                                    
+                                    <img src="/imagenes/camperas-presentacion.jpg"  style="width:100%;" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div> -->
+
+
+
+        <div class="titulo-main-dos">
+            <img src="./imagenes/recuadro-title.jpg" alt="">
+        </div>
+
+        <div class="prod-presentacion">
+            <article class="card-dos"><a href="/paginas/productos/buzos.html"><img class="img-efecto"
+                        src="/imagenes/buzos-presentacion.jpg" style="width:100%;" alt=""></a></article>
+            <article class="card-dos"><a href="/paginas/productos/remeras.html"><img class="img-efecto"
+                        src="/imagenes/remeras-presentacion.jpg" style="width:100%;" alt=""></a></article>
+            <article class="card-dos"><a href="/paginas/productos/sneakers.html"><img class="img-efecto"
+                        src="/imagenes/sneakers-presentacion.jpg" style="width:100%;" alt=""></a></article>
+            <article class="card-dos"><a href="/paginas/productos/shorts.html"><img class="img-efecto"
+                        src="/imagenes/shorts-presentacion.jpg" style="width:100%;" alt=""></a></article>
+        </div>
+
+
+        <!-- NOSOTROS -->
+
+        <h2 class="nosotros-title">SOMOS NORD</h2>
+        <div class="nosotros-info">
+            <p>Somos la primer tienda de consignación HYPE en la Argentina. Con mas de 10 años de experiencia en la
+                industria de los sneakers y el hype, traemos la experiencia y la cultura del streetwear y las marcas
+                highend al país mediante nuestro sistema de consignación. En NORD vas a encontrar productos únicos y
+                %100 originales.</p>
+        </div>
+        <div class="nosotros-btn">
+            <h3><a href="/paginas/nosotros.html">CONOCENOS</a></h3>
+        </div>
+        <div class="nosotros-img"> <img src="/imagenes/2020-travis-scott-gq-ie-1336x768.jpg" alt=""></div>
+
+
+
+        <!-- CARDS DE LOS PRODUCTOS -->
+
+
+
+
+        <!-- UBICACION -->
+
+        <div class="row showroom">
+            <div class="col">
+
+                <!-- map -->
+                <div class="showroom-ubi"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4874.804895733898!2d-60.69637026743797!3d-32.927821235138744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668458521040!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <!-- info -->
+            <div class="col">
+                <div class="showroom-info">
+                    <h3>VISITA NUESTRO SHOWROOM</h3>
+                    <h6><img src="/imagenes/ubi-icon.png" alt=""> Junin 1515 oficina 201 Cuerpo A, Belgrano.</h6>
+                    <h6><img src="imagenes/mail-icon-footer.png" style="width: 22px;" alt="">
+                        nord_indumentaria@gmail.com</h6>
+                </div>
+                <div class="showroom-input">
+                    <ul>
+                        <li>
+                            <input type="name" placeholder="Nombre">
+                        </li>
+                        <li>
+                            <input type="email" placeholder="Email">
+                        </li>
+                        <li>
+                            <input type="text" placeholder="Asunto">
+                        </li>
+                        <!-- <li>
+                            <textarea name="" id="" cols="50" rows="4" placeholder="Mensaje"></textarea>
+                        </li> -->
+                    </ul>
+                    <a href="index.html" target="_blank" style="text-decoration:none;">
+                        <h4 class="buttons-footer-2" style="width: 48%; margin-left:60px;">ENVIA TU CONSULTA</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- REMERAS -->
+
+
+        <!-- <div class="titulo-main-remeras">
+            <h3>REMERAS</h3>
+        </div>
+
+        <div class="row-remeras">
+            <div class="col">
+                <div class="card">
+                    <img class="card-remera" src="productos/remera-regular-bordo.png" width="250" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Remera Regular Fit</h5>
+                        <p class="card-text">$1.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-remera" src="productos/remera-regular-verde.png" width="250" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Remera Regular Fit</h5>
+                        <p class="card-text">$1.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-remera" src="productos/remera-regular-rosa.png" width="250" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Remera Regular Fit</h5>
+                        <p class="card-text">$1.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-remera" src="productos/remera-regular-azul.png" width="250" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Remera Regular Fit</h5>
+                        <p class="card-text">$1.500</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+        <!-- SHORTS -->
+        <!-- 
+        <div class="titulo-main-shorts">
+            <h3>SHORTS</h3>
+        </div>
+
+        <div class="row-shorts">
+            <div class="col">
+                <div class="card">
+                    <img class="card-shorts" src="productos/short-rustico-amarillo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Short de Algodon Rustico</h5>
+                        <p class="card-text">$1.200</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-shorts" src="productos/short-rustico-celeste.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Short de Algodon Rustico</h5>
+                        <p class="card-text">$1.200</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-shorts" src="productos/short-rustico-violeta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Short de Algodon Rustico</h5>
+                        <p class="card-text">$1.200</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-shorts" src="productos/short-rustico-gris.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Short de Algodon Rustico</h5>
+                        <p class="card-text">$1.000</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+        <!-- BUZOS -->
+
+
+        <!-- <div class="titulo-main-buzos">
+            <h3>BUZOS</h3>
+        </div>
+
+        <div class="row-buzos">
+            <div class="col">
+                <div class="card">
+                    <img class="card-buzos" src="productos/buzo-oversize-soft-azulpastel.png" width="250"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buzo Oversize Soft</h5>
+                        <p class="card-text">$2.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-buzos" src="productos/buzo-oversize-soft-beige.png" width="250"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buzo Oversize Soft</h5>
+                        <p class="card-text">$2.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-buzos" src="productos/buzo-oversize-soft-marron.png" width="250"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buzo Oversize Soft</h5>
+                        <p class="card-text">$2.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-buzos" src="productos/buzo-oversize-soft-rosa.png" width="250" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Buzo Oversize Soft</h5>
+                        <p class="card-text">$2.500</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+
+            <div class="row">
+                <div class="col">
+                    <h3>ATENCION AL CLIENTE</h3>
+                    <div class="footer-info-secundaria">
+                        <ul>
+                            <li>
+
+                                <a href="/paginas/footer/envios.html">Envios</a>
+                            </li>
+                            <li>
+                                <a href="/paginas/footer/ventas-p-mayor.html">Ventas por mayor</a>
+                            </li>
+                            <li>
+                                <a href="/paginas/footer/preg-frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li>
+                                <a href="/paginas/footer/p-de-cambios.html">Políticas de cambios</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>CONTACTÁNOS</h3>
+                    <div class="footer-info-secundaria">
+                        <ul>
+                            <li>
+                                <a href="https://web.whatsapp.com/" target="_blank"><img
+                                        src="imagenes/wsp-icon-footer.png" style="width: 35px;" alt=""> 0336-4204407</a>
+                            </li>
+
+                            <li>
+                                <a href="https://outlook.live.com/mail/" target="_blank"><img
+                                        src="imagenes/mail-icon-footer.png" style="width: 32px;" alt="">
+                                    nord_indumentaria@gmail.com</a>
+
+                            </li>
+                        </ul>
+                        <input class="buttons-footer" type="email" style="background-color: white;" placeholder="Email">
+                        <a href="index.html" target="_blank">
+                            <h4 class="buttons-footer-2">ENVIAR</h4>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <h3>SEGUINOS EN REDES</h3>
+                    <div class="footer-icons">
+                        <a href="https://facebook.com/" target="_blank"><img src="imagenes/fb-icon.png" alt=""></a>
+                        <a href="https://instagram.com/" target="_blank"><img src="imagenes/ig-icon.png" alt=""></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
