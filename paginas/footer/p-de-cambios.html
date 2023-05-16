@@ -5,55 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/nord.css">
-    <link rel="shortcut icon" href="/imagenes/logonord.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/nord-indumentaria/css/normalize.css">
+    <link rel="stylesheet" href="/nord-indumentaria/css/nord.css">
+    <link rel="shortcut icon" href="/nord-indumentaria/imagenes/logonord.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto&family=Roboto+Condensed&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Politica de cambios y devoluciones</title>
+    <title>Politicas de cambios</title>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar fixed-top">
         <div class="container-fluid">
             <div class="animate__animated animate__flipInX">
-                <a href="/index.html"><img class="logo-header" src="/imagenes/logonord.png" alt="logo de la pagina"></a>
-                <a href="/index.html"><img class="titulo-header" src="/imagenes/titulo-header.png"
+                <a href="/nord-indumentaria/index.html"><img class="logo-header" src="/nord-indumentaria/imagenes/logonord.png" alt="logo de la pagina"></a>
+                <a href="/nord-indumentaria/index.html"><img class="titulo-header" src="/nord-indumentaria/imagenes/titulo-header.png"
                         alt="titulo de la pagina"></a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="search-icon" type="submit"><img style="max-width: 25px;" src="/nord-indumentaria/imagenes/search-icon.png"
+                        alt=""></button>
+            </form>
+            <div class="iconos-nav">
+                <img style="width: 65px; margin: 3px;" src="/nord-indumentaria/imagenes/user-icon.png" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                </img><a href=""><img style="width: 65px; margin: 3px;" src="/nord-indumentaria/imagenes/cart-icon.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span><img style="width: 23px;" src="/nord-indumentaria/imagenes/toggler-icon2.png" alt=""></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                    <div class="container-fluid">
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                        <button class="search-icon" type="submit"><img style="max-width: 25px;" src="/imagenes/search-icon.png" alt=""></button>
-                      </form>
-                    </div>
-                       <div class="iconos-nav">
-                         <img style="width: 70px;" src="/imagenes/user-icon.png" type="button" data-bs-toggle="offcanvas"
-                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                         </img><a href=""><img style="width: 70px;" src="/imagenes/cart-icon.png" alt=""></a>
-                       </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 style="font-family: 'Poppins', sans-serif;" class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Nuestra tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" aria-current="page"
+                                href="/nord-indumentaria/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Carrito</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif; " class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/nord-indumentaria/paginas/productos/buzos.html">Buzos</a></li>
+                                <li><a class="dropdown-item" href="/nord-indumentaria/paginas/productos/shorts.html">Shorts</a></li>
+                                <li><a class="dropdown-item" href="/nord-indumentaria/paginas/productos/remeras.html">Remeras</a></li>
+                                <li><a class="dropdown-item" href="/nord-indumentaria/paginas/productos/sneakers.html">Sneakers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Asistencia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="envios.html">Envios</a></li>
+                                <li><a class="dropdown-item" href="ventas-p-mayor.html">Ventas por mayor</a></li>
+                                <li><a class="dropdown-item" href="preg-frecuentes.html">Preguntas frecuentes</a></li>
+                                <li><a class="dropdown-item" href="p-de-cambios.html">Politica de cambios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </nav>
+    <header class="header-info">
+        <div class="header-title-info">
+            <h5>POLITICAS DE CAMBIOS</h5>
+        </div>
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/nord-indumentaria/index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Politicas de cambios</li>
+            </ol>
+          </nav>
+    </header>
 
 
     <div class="p-de-cambios">
         <h4>Podés realizar el cambio de tus compras a través del siguiente proceso</h4>
+        <hr>
         <p>Comunícate con nosotros a nuestro mail <b>nord_indumentaria@gmail.com</b> indicando, número de pedido, prenda
             que deseas cambiar, y cual queres recibir. Una vez recibido el producto en nuestras oficinas, procedemos con
             el nuevo envío.</p>
@@ -69,11 +123,13 @@
             45 días hábiles sobre la misma.</p>
 
         <h4>Cambios en sucursal</h4>
+        <hr>
         <p>Podes acercarte a una sucursal exclusiva con ticket de cambio digital o factura que recibiste en el mail de
             tu compra, el producto en perfecto estado y packaging correspondiente ( bolsa de madera de la marca,
             etiqueta colgante en la prenda, y envoltura transparente en el cual vino el producto ).</p>
 
         <h4>Locales exclusivos</h4>
+        <hr>
         <ul>
             <li>- San Justo Shopping</li>
             <li>- Devoto Shopping</li>
@@ -84,15 +140,17 @@
             <li>- Junin 1515 oficina 201</li>
         </ul>
         <h4>Locales Outlet</h4>
+        <hr>
         <ul>
             <li>- Soleil Premium Outlet</li>
             <li>- Mendoza Centro</li>
             <li>- Gurruchaga</li>
         </ul>
-        <p>Podes ingresar a nuestra <a href="/index.html">Tienda</a> para más información de cada sucursal.</p>
+        <p>Podes ingresar a nuestra <a href="/nord-indumentaria/index.html">Tienda</a> para más información de cada sucursal.</p>
         <p>Prendas adquiridas en la página se pueden cambiar en cualquiera de los locales mencionados anteriormente.</p>
 
         <h4>Términos y condiciones para cambios de compras realizadas en la Tienda Online</h4>
+        <hr>
         <p>LOS CONSUMIDORES TENDRÁN DERECHO A DEVOLVER EL PRODUCTO ADQUIRIDO, EN LOS SIGUIENTES CASOS:</p>
         <p><b>(I) DEVOLUCIÓN:</b> EL CONSUMIDOR TIENE DERECHO A REVOCAR LA OPERACIÓN COMERCIAL DURANTE EL PLAZO DE DIEZ
             ( 10 ) DÍAS CORRIDOS, CONTADOS A PARTIR DE LA FECHA EN QUE SE ENTREGUE EL PRODUCTO O SE CELEBRE EL CONTRATO,
@@ -157,13 +215,13 @@
                         <ul>
                             <li>
                                 <a href="https://web.whatsapp.com/" target="_blank"><img
-                                        src="/imagenes/wsp-icon-footer.png" style="width: 35px;" alt="">
+                                        src="/nord-indumentaria/imagenes/wsp-icon-footer.png" style="width: 35px;" alt="">
                                     0336-4204407</a>
                             </li>
 
                             <li>
                                 <a href="https://outlook.live.com/mail/" target="_blank"><img
-                                        src="/imagenes/mail-icon-footer.png" style="width: 32px;" alt="">
+                                        src="/nord-indumentaria/imagenes/mail-icon-footer.png" style="width: 32px;" alt="">
                                     nord_indumentaria@gmail.com</a>
 
                             </li>
@@ -179,8 +237,8 @@
                 <div class="col">
                     <h3>SEGUINOS EN REDES</h3>
                     <div class="footer-icons">
-                        <a href="https://facebook.com/" target="_blank"><img src="/imagenes/fb-icon.png" alt=""></a>
-                        <a href="https://instagram.com/" target="_blank"><img src="/imagenes/ig-icon.png" alt=""></a>
+                        <a href="https://facebook.com/" target="_blank"><img src="/nord-indumentaria/imagenes/fb-icon.png" alt=""></a>
+                        <a href="https://instagram.com/" target="_blank"><img src="/nord-indumentaria/imagenes/ig-icon.png" alt=""></a>
                     </div>
                 </div>
 
