@@ -5,119 +5,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/nord.css">
-    <link rel="shortcut icon" href="/imagenes/logonord.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/nord-indumentaria/css/normalize.css">
+    <link rel="stylesheet" href="/nord-indumentaria/css/nord.css">
+    <link rel="shortcut icon" href="/nord-indumentaria/imagenes/logonord.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto&family=Roboto+Condensed&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Preguntas Frecuentes</title>
+    <title>Preguntas frecuentes</title>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar fixed-top">
         <div class="container-fluid">
             <div class="animate__animated animate__flipInX">
-                <a href="/index.html"><img class="logo-header" src="/imagenes/logonord.png" alt="logo de la pagina"></a>
-                <a href="/index.html"><img class="titulo-header" src="/imagenes/titulo-header.png"
-                        alt="titulo de la pagina"></a>
+                <a href="/nord-indumentaria/index.html"><img class="logo-header"
+                        src="/nord-indumentaria/imagenes/logonord.png" alt="logo de la pagina"></a>
+                <a href="/nord-indumentaria/index.html"><img class="titulo-header"
+                        src="/nord-indumentaria/imagenes/titulo-header.png" alt="titulo de la pagina"></a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                <button class="search-icon" type="submit"><img style="max-width: 25px;"
+                        src="/nord-indumentaria/imagenes/search-icon.png" alt=""></button>
+            </form>
+            <div class="iconos-nav">
+                <img style="width: 65px; margin: 3px;" src="/nord-indumentaria/imagenes/user-icon.png" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                </img><a href=""><img style="width: 65px; margin: 3px;" src="/nord-indumentaria/imagenes/cart-icon.png"
+                        alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span><img style="width: 23px;" src="/nord-indumentaria/imagenes/toggler-icon2.png" alt=""></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                    <div class="container-fluid">
-                      <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-                        <button class="search-icon" type="submit"><img style="max-width: 25px;" src="/imagenes/search-icon.png" alt=""></button>
-                      </form>
-                    </div>
-                       <div class="iconos-nav">
-                         <img style="width: 70px;" src="/imagenes/user-icon.png" type="button" data-bs-toggle="offcanvas"
-                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                         </img><a href=""><img style="width: 70px;" src="/imagenes/cart-icon.png" alt=""></a>
-                       </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 style="font-family: 'Poppins', sans-serif;" class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Nuestra tienda</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" aria-current="page"
+                                href="/nord-indumentaria/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link" href="#">Carrito</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif; " class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="/nord-indumentaria/paginas/productos/buzos.html">Buzos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/nord-indumentaria/paginas/productos/shorts.html">Shorts</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/nord-indumentaria/paginas/productos/remeras.html">Remeras</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/nord-indumentaria/paginas/productos/sneakers.html">Sneakers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a style="font-family: 'Poppins', sans-serif;" class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Asistencia
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="envios.html">Envios</a></li>
+                                <li><a class="dropdown-item" href="ventas-p-mayor.html">Ventas por mayor</a></li>
+                                <li><a class="dropdown-item" href="preg-frecuentes.html">Preguntas frecuentes</a></li>
+                                <li><a class="dropdown-item" href="p-de-cambios.html">Politica de cambios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </nav>
+    <header class="header-info">
+        <div class="header-title-info">
+            <h5>PREGUNTAS FRECUENTES</h5>
+        </div>
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/nord-indumentaria/index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Preguntas frecuentes</li>
+            </ol>
+        </nav>
+    </header>
+
+
+
+
+
+
 
 
     <div class="preg-frecuentes">
-        <h2>Preguntas Frecuentes</h2>
-
-        <h4>¿LOS ARTÍCULOS DE MI CARRO DE COMPRA ESTÁN RESERVADOS?</h4>
-        <p>No, los artículos que añada a su carro de compra no están reservados y le sugerimos realizar su pedido lo más
-            rápido posible para asegurarse que todos los talles estén disponibles.</p>
-
-        <h4>CONSULTAS SOBRE ENVÍOS</h4>
-        <p>Para más información, por favor, consulte la sección <a href="envios.html">Envíos</a> en nuestra web.</p>
-
-        <h4>CONSULTAS SOBRE DEVOLUCIONES</h4>
-        <p>Para más información, por favor, consulte la sección <a href="p-de-cambios.html">Cambios y Devoluciones.</a>
-        </p>
-
-        <h4>¿CUÁLES SON LAS FORMAS DE PAGO DISPONIBLES?</h4>
-        <p>El pago del pedido en el shop online se efectúa mediante, <b>MercadoPagó, Mobbex y gocuotas</b> con tarjeta
-            de
-            crédito / débito.</p>
-
-        <p>En Nord tomamos las medidas necesarias para proteger tus datos mediante un sistema de cobranza a través de
-            tarjeta de crédito que es 100% seguro.
-            Los números son encriptados y no sufren ningún tipo de amenaza en nuestro banco de datos, siendo enviados
-            directamente a la administradora de la tarjeta de crédito.
-        </p>
-
-        <h4>¿PUEDO CAMBIAR O CANCELAR MI PEDIDO UNA VEZ SE HAYA REALIZADO?</h4>
-        <p>Puede cambiar o cancelar su pedido antes de que le mandemos el email que indica que el paquete ha salido de
-            nuestro depósito contactar a <b>nord_indumentaria@gmail.com</b></p>
-
-        <h4>¿CÓMO PUEDO PONERME EN CONTACTO SI TENGO ALGUNA PREGUNTA?</h4>
-        <p>Puede contactar con nuestro Servicio de Atención al Cliente escribiendo al siguiente mail:
-            <b>nord_indumentaria@gmail.com</b>
-        </p>
-
-        <h4>¿CON QUIÉN PUEDO CONTACTAR SI NO ESTOY SATISFECHO CON EL SERVICIO RECIBIDO?</h4>
-        <p>Puede contactar con nuestro servicio de Atención al Cliente al chatcommerce 11 - 3682 - 4914
-            Estamos encantados de recibir sus comentarios y trabajaremos para resolver sus dudas y consultas.
-        </p>
-
-        <h4>TIEMPO ESTIMADO PARA LAS DEVOLUCIONES, CAMBIOS Y REEMBOLSOS</h4>
-        <p>Por favor, tengan en cuenta que las devoluciones, cambios y reembolsos pueden tardar hasta tres semanas en
-            ser procesados. Esto es debido a los retrasos acumulados en la red de correos y a las medidas
-            extraordinarias de seguridad para proteger a nuestros empleados.</p>
-
-        <h4>DIFERENCIAS DE MONTOS POR CAMBIO DE ARTÍCULO</h4>
-        <p>En caso de que usted desee cambiar un artículo con diferencia de precio a su favor se le va a ofrecer la
-            opción de obtener una nota de crédito, o generar una devolución a su tarjeta bancaria con la que se realizo
-            la compra.
-            En caso de que la diferencia sea a nuestro favor se le va a enviar un link de pago con el monto a abonar.
-            Una vez abonado se procederá con el envío.
-        </p>
-
-
-
-        <h4>QUIERO ABRIR UNA FRANQUICIA O COMPRAR POR MAYOR</h4>
-        <p>Si estás interesado en abrir una franquicia de <b>Nord</b> escribinos a <b>nord_indumentaria@gmail.com</b>,
-            nos contactaremos a la brevedad con vos.</p>
-
-
-        <h4>ATENCIÓN AL CLIENTE</h4>
-        <p>Los productos de <b>Nord</b> tienen controles de calidad previo a salir a la venta. Si consideras que el
-            producto comprado cuenta con una falla de fábrica, por favor contáctate a email:
-            <b>nord_indumentaria@gmail.com</b></p>
-
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <h2> ¿LOS ARTÍCULOS DE MI CARRO DE COMPRA ESTÁN RESERVADOS?</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <p> No, los artículos que añada a su carro de compra no están reservados y le sugerimos realizar
+                            su pedido lo más
+                            rápido posible para asegurarse que todos los talles estén disponibles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <h2> CONSULTAS SOBRE ENVÍOS</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <p>Para más información, por favor, consulte la sección <a href="envios.html">Envíos</a> en
+                            nuestra web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <h2>CONSULTAS SOBRE DEVOLUCIONES</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>Para más información, por favor, consulte la sección <a href="p-de-cambios.html">Cambios y
+                                Devoluciones.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        <h2>¿CUÁLES SON LAS FORMAS DE PAGO DISPONIBLES?</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <p>El pago del pedido en el shop online se efectúa mediante, <b>MercadoPagó, Mobbex y
+                                gocuotas</b> con tarjeta
+                            de
+                            crédito / débito.</p>
+                            <p>En Nord tomamos las medidas necesarias para proteger tus datos mediante un sistema de cobranza a través de
+                                tarjeta de crédito que es 100% seguro.
+                                Los números son encriptados y no sufren ningún tipo de amenaza en nuestro banco de datos, siendo enviados
+                                directamente a la administradora de la tarjeta de crédito.
+                            </p>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        <h2>¿PUEDO CAMBIAR O CANCELAR MI PEDIDO UNA VEZ SE HAYA REALIZADO?</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <p>Puede cambiar o cancelar su pedido antes de que le mandemos el email que indica que el paquete ha salido de
+                            nuestro depósito contactar a <b>nord_indumentaria@gmail.com</b></p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSix">
+                        <h2>¿CÓMO PUEDO PONERME EN CONTACTO SI TENGO ALGUNA PREGUNTA?</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSix">
+                    <div class="accordion-body">
+                        <p>Puede contactar con nuestro Servicio de Atención al Cliente escribiendo al siguiente mail:
+                            <b>nord_indumentaria@gmail.com</b></p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseSeven">
+                        <h2>¿CON QUIÉN PUEDO CONTACTAR SI NO ESTOY SATISFECHO CON EL SERVICIO RECIBIDO?</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingSeven">
+                    <div class="accordion-body">
+                        <p>Puede contactar con nuestro servicio de Atención al Cliente al chatcommerce 11 - 3682 - 4914
+                            Estamos encantados de recibir sus comentarios y trabajaremos para resolver sus dudas y consultas.</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseEight">
+                        <h2>TIEMPO ESTIMADO PARA LAS DEVOLUCIONES, CAMBIOS Y REEMBOLSOS</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingEight">
+                    <div class="accordion-body">
+                        <p>Por favor, tengan en cuenta que las devoluciones, cambios y reembolsos pueden tardar hasta tres semanas en
+                            ser procesados. Esto es debido a los retrasos acumulados en la red de correos y a las medidas
+                            extraordinarias de seguridad para proteger a nuestros empleados.</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseNine">
+                        <h2>DIFERENCIAS DE MONTOS POR CAMBIO DE ARTÍCULO</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingNine">
+                    <div class="accordion-body">
+                        <p>En caso de que usted desee cambiar un artículo con diferencia de precio a su favor se le va a ofrecer la
+                            opción de obtener una nota de crédito, o generar una devolución a su tarjeta bancaria con la que se realizo
+                            la compra.
+                            En caso de que la diferencia sea a nuestro favor se le va a enviar un link de pago con el monto a abonar.
+                            Una vez abonado se procederá con el envío.</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTen">
+                        <h2>QUIERO ABRIR UNA FRANQUICIA O COMPRAR POR MAYOR</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTen">
+                    <div class="accordion-body">
+                        <p>Si estás interesado en abrir una franquicia de <b>Nord</b> escribinos a <b>nord_indumentaria@gmail.com</b>,
+                            nos contactaremos a la brevedad con vos.</p>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseEleven">
+                        <h2>ATENCIÓN AL CLIENTE</h2>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingEleven">
+                    <div class="accordion-body">
+                        <p>Los productos de <b>Nord</b> tienen controles de calidad previo a salir a la venta. Si consideras que el
+                            producto comprado cuenta con una falla de fábrica, por favor contáctate a email:
+                            <b>nord_indumentaria@gmail.com</b></p>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+
+
 
 
     <!-- Footer -->
@@ -153,19 +359,19 @@
                         <ul>
                             <li>
                                 <a href="https://web.whatsapp.com/" target="_blank"><img
-                                        src="/imagenes/wsp-icon-footer.png" style="width: 35px;" alt="">
+                                        src="/nord-indumentaria/imagenes/wsp-icon-footer.png" style="width: 35px;" alt="">
                                     0336-4204407</a>
                             </li>
 
                             <li>
                                 <a href="https://outlook.live.com/mail/" target="_blank"><img
-                                        src="/imagenes/mail-icon-footer.png" style="width: 32px;" alt="">
+                                        src="/nord-indumentaria/imagenes/mail-icon-footer.png" style="width: 32px;" alt="">
                                     nord_indumentaria@gmail.com</a>
 
                             </li>
                         </ul>
                         <input class="buttons-footer" type="email" style="background-color: white;" placeholder="Email">
-                        <a href="/index.html" target="_blank">
+                        <a href="/nord-indumentaria/index.html" target="_blank">
                             <h4 class="buttons-footer-2">ENVIAR</h4>
                         </a>
                     </div>
@@ -175,8 +381,8 @@
                 <div class="col">
                     <h3>SEGUINOS EN REDES</h3>
                     <div class="footer-icons">
-                        <a href="https://facebook.com/" target="_blank"><img src="/imagenes/fb-icon.png" alt=""></a>
-                        <a href="https://instagram.com/" target="_blank"><img src="/imagenes/ig-icon.png" alt=""></a>
+                        <a href="https://facebook.com/" target="_blank"><img src="/nord-indumentaria/imagenes/fb-icon.png" alt=""></a>
+                        <a href="https://instagram.com/" target="_blank"><img src="/nord-indumentaria/imagenes/ig-icon.png" alt=""></a>
                     </div>
                 </div>
 

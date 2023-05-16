@@ -59,7 +59,7 @@ header {
 }
 
 .card-tres:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 
@@ -297,6 +297,7 @@ header {
     width: fit-content;
     font-size: 16px;
     margin-top: 10px;
+    color: rgb(76, 76, 76);
 }
 
 .card-text {
@@ -392,6 +393,7 @@ header {
     height: 430px;
     padding: 50px 40px;
     background-color: rgb(0, 0, 0);
+    margin-top: 120px;
 }
 
 .footer-info h3 {
@@ -623,6 +625,7 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 100px;
 }
 .select-productos-responsive {
     display: none;
@@ -712,6 +715,7 @@ ul {
     font-size: 17px;
     text-align: center;
     padding: 20px;
+    background-color: rgb(240, 240, 240);
 }
 
 
@@ -749,15 +753,16 @@ ul {
 
 .preg-frecuentes {
     text-align: justify;
-    padding: 40px 250px;
+    padding: 40px 400px;
+    
 }
 
 .preg-frecuentes h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    padding: 35px;
-    text-align: center;
-    color: #000000;
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(165, 2, 2);
 }
 
 .preg-frecuentes h4 {
@@ -769,6 +774,8 @@ ul {
 
 .preg-frecuentes p {
     font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    font-size: 15px;
 }
 
 .preg-frecuentes p a {
@@ -779,6 +786,39 @@ ul {
 
 .navbar-toggler {
     display: none !important;
+}
+
+.header-info {
+    height: 500px;
+    background-image: url(/nord-indumentaria/imagenes/header-info.jfif);
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px;
+}
+
+.header-title-info h5 {
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 200px;
+}
+
+.breadcrumb {
+    justify-content: center;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: white;
+}
+.breadcrumb-item {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.breadcrumb-item.active {
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
 }
 
 
@@ -850,7 +890,7 @@ ul {
     }
 
     .prod-content {  
-        grid-auto-rows: 18rem;
+        grid-auto-rows: 19rem;
         grid-template-columns: repeat(auto-fit, minmax(min(40%, 25rem), 1fr));
     }
 
@@ -932,6 +972,80 @@ ul {
     .header-title h5 {
         font-size: 50px;
     }
+
+
+    .envios {
+        padding: 35px;
+    }
+    
+    .envios h2 {
+        font-size: 21px;
+    }
+    
+    .envios h4 {
+        font-size: 18px;
+    }
+    
+    .envios p {
+        font-size: 15px;
+    }
+
+    .header-title-info h5 {
+        font-size: 40px;
+        -webkit-text-stroke: #00000094 1px;
+    }
+    
+    .ventas-p-mayor-info {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 15px;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .ventas-p-mayor {
+        padding: 35px;
+    }
+    
+    .ventas-p-mayor h4 {
+        font-size: 18px;
+    }
+    
+    .ventas-p-mayor p {
+        font-size: 15px;
+    }
+
+
+    .preg-frecuentes {
+        padding: 35px;
+    }
+    
+    .preg-frecuentes h2 {
+        padding: 10px;
+        font-size: 17px;
+    }
+    
+    .preg-frecuentes h4 {
+        font-size: 18px;
+    }
+    
+    .preg-frecuentes p {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .p-de-cambios {
+        padding: 35px;
+    }
+    
+    .p-de-cambios h4 {
+        font-size: 18px;
+    }
+    
+    .p-de-cambios p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+
 
 }
 
