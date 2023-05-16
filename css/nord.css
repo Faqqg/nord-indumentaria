@@ -1,0 +1,951 @@
+.row {
+    margin-right: 0px !important;
+}
+
+.titulo-nav {
+    padding: 0px 50px;
+}
+
+.navbar {
+    background-color: #000000;
+}
+.iconos-nav {
+    display: inline-block !important;
+    width: 200px;
+}
+
+.search-icon {
+    border-radius: 80%;
+    background-color: none !important;
+}
+
+.titulo-header {
+    height: 65px;
+}
+
+header {
+    height: 520px;
+    background-image: url('/nord-indumentaria/imagenes/background-header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.prod-content {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+
+.prod-presentacion {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 25rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+}
+
+.card-dos {
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.card-tres {
+    overflow: hidden;
+    margin: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.card-tres:hover {
+    transform: scale(1.1);
+}
+
+
+.container-productos {
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+}
+
+.row-productos {
+    width: 100%;
+}
+
+.logo-header {
+    height: 45px;
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.d-flex {
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/* Form */
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 0px;
+    letter-spacing: 2px
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.account-box h4 {
+    font-size: 16px;
+    text-align: center;
+    padding: 0px;
+    transition: all 0.3s;
+}
+
+.account-box h4:hover {
+    color: rgb(129, 0, 0);
+}
+
+.submit-box {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-box input {
+    background-color: #1b1b1b;
+    color: white;
+    width: 500px;
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s;
+    letter-spacing: 3px;
+}
+
+.submit-box input:hover {
+    background-color: #000000;
+}
+
+
+/* Form */
+
+
+
+
+
+
+.info {
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 50px;
+    height: 200px;
+    background-color: rgba(228, 228, 228, 0.795);
+}
+
+.titulo-main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+
+.titulo-main img {
+    width: 300px;
+    border-radius: 2%;
+}
+
+.titulo-main-dos {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+
+.titulo-main-dos img {
+    width: 240px;
+    border-radius: 2%;
+}
+
+/* .productos img {
+    max-width: 480px;
+    padding: 5px;
+    align-content: center;
+    transition: filter 1s;
+    transition: ease-in 0.4s;
+}
+
+.productos img:hover {
+    filter: brightness(85%);
+    transform: scale(0.98);
+}
+
+.productos-general {
+    display: flex;
+    justify-content: center;
+}
+
+.col-productos-2 {
+    padding: 0px !important;
+}
+ .productos-2 img {
+    max-width: 240px;
+    padding: 5px;
+    transition: filter 1s;
+    transition: ease-in 0.4s;
+
+}
+
+.productos-2 img:hover {
+    filter: brightness(85%);
+    transform: scale(0.98);
+}  */
+
+.col-auto {
+    padding: 0px !important;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 0px;
+    height: 100px;
+    --bs-card-border-width: 0px !important;
+    position: static !important;
+    --bs-card-bg: none !important;
+}
+
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo-main-remeras {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.61);
+}
+
+.titulo-main-shorts {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.61);
+}
+
+
+.titulo-main-buzos {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.61);
+}
+
+
+.row-shorts {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+}
+
+
+.row-remeras {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row-buzos {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.card-remera {
+    max-width: 100%;
+
+}
+
+
+.card-shorts {
+    height: 280px;
+    max-width: 100%;
+}
+
+.card-buzos {
+    height: 290px;
+    max-width: 100%;
+}
+
+
+
+.h3 {
+    margin-bottom: 0px !important;
+}
+
+.footer-info {
+    height: 430px;
+    padding: 50px 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer-info h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.footer-info-secundaria {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-secundaria a {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: 15px;
+    transition: ease-in 0.1s;
+
+}
+
+.footer-info-secundaria ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 0px !important;
+}
+
+.buttons-footer {
+    margin-top: 10px;
+    background-color: rgb(158, 0, 0);
+    width: 58%;
+    height: 46px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.buttons-footer-2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(170, 0, 0);
+    width: 58%;
+    margin-top: 14px;
+    transition: all 0.4s;
+}
+
+.buttons-footer-2:hover {
+    background-color: rgba(114, 114, 114, 0.192);
+}
+
+.footer-info-secundaria a:hover {
+    color: #dddddd;
+}
+
+.footer-icons a img {
+    width: 55px;
+    margin-right: 25px;
+    transition: all 0.4s;
+
+}
+
+.footer-icons a img:hover {
+    transform: scale(1.1);
+
+}
+
+.botones-general {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.botones-grupo {
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #040404 !important;
+    --bs-btn-border-color: #000000 !important;
+}
+
+.btn-group,
+.btn-group-vertical {
+    position: static !important;
+}
+
+
+.badge {
+    border-radius: 0px !important;
+    width: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-title {
+    margin-top: 130px;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-info {
+    text-align: center;
+    padding: 20px 200px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-btn {
+    margin: auto;
+    background-color: black;
+    width: 160px;
+    margin-bottom: 80px;
+    transition: all 0.5s;
+}
+
+.nosotros-btn:hover {
+    background-color: rgb(158, 0, 0);
+    transform: scale(1.05);
+}
+
+.nosotros-btn h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nosotros-btn h3 a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nosotros-img {
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros-img img {
+    max-width: 90%;
+}
+
+.showroom {
+    margin-top: 100px !important;
+    height: 700px;
+    background-position: center;
+    background-image: url('/nord-indumentaria/material/showroom-bg.jpg');
+    background-size: cover;
+    padding: 70px;
+}
+
+.showroom-ubi {
+    display: flex;
+    justify-content: left;
+
+}
+
+.showroom-ubi iframe {
+    width: 100%;
+}
+
+.showroom-info h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.showroom-info h6 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.showroom-info img {
+    width: 15px;
+    margin-top: -5px;
+
+}
+
+
+.showroom-input ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.showroom-input ul li input {
+    width: 70%;
+    height: 45px;
+    background: none;
+    border-color: white;
+    color: white;
+}
+
+.showroom-input ul li input::placeholder {
+    color: white;
+}
+
+.showroom-input ul li textarea {
+    background: none;
+    border-color: white;
+}
+
+.showroom-input ul li textarea::placeholder {
+    color: white;
+}
+
+
+
+.select-productos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.select-productos-responsive {
+    display: none;
+}
+
+.select-productos button {
+    margin-top: 40px;
+    margin-inline: 10px;
+    background-color: black;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS DE PRODUCTOS */
+
+/* SECCION BUZOS */
+
+.header-productos {
+    height: 450px;
+    background-image: url(/nord-indumentaria/imagenes/header-productos.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px;
+}
+
+.header-title h5 {
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 0.1px rgb(255, 196, 0);
+    color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 200px;
+}
+
+
+
+/* SECCION ENVIOS */
+.envios {
+    text-align: justify;
+    padding: 40px 250px;
+}
+
+.envios h2 {
+    color: rgb(165, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.envios h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.envios p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* SECCION VENTAS POR MAYOR */
+
+.ventas-p-mayor {
+    text-align: justify;
+    padding: 40px 250px;
+}
+
+.ventas-p-mayor h4 {
+    color: rgb(165, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.ventas-p-mayor p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ventas-p-mayor ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.ventas-p-mayor-info {
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* SECCION POLITICA DE CAMBIOS */
+
+.p-de-cambios {
+    text-align: justify;
+    padding: 40px 250px;
+}
+
+.p-de-cambios h4 {
+    color: rgb(165, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.p-de-cambios p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-de-cambios ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.p-de-cambios p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* SECCION PREGUNTAS FRECUENTES */
+
+.preg-frecuentes {
+    text-align: justify;
+    padding: 40px 250px;
+}
+
+.preg-frecuentes h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 35px;
+    text-align: center;
+    color: #000000;
+}
+
+.preg-frecuentes h4 {
+    color: rgb(165, 2, 2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.preg-frecuentes p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.preg-frecuentes p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: none !important;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width:768px) {
+
+    .navbar-toggler {
+        display: flex !important;
+    }
+    .navbar-toggler-icon {
+        color: white !important;
+    }
+    .dropdown-menu {
+        position: absolute !important;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .logo-header {
+        height: 45px;
+    }
+
+    .titulo-header {
+        height: 45px;
+    }
+
+    .iconos-nav {
+        display: none !important;
+    }
+    .d-flex {
+        display: none !important;
+        width: 0px !important;
+    }
+
+    .search-icon {
+        display: none !important;
+    }
+
+    .form-control {
+        display: none !important;
+    }
+
+    .info {
+        height: max-content;
+        padding: 10px;
+    }
+
+    .swiper-wrapper {
+        display: inline-block;
+    }
+
+    .titulo-main img {
+        width: 220px;
+    }
+
+    .titulo-main {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .titulo-main-dos img {
+        width: 200px;
+    }
+
+    .titulo-main-dos {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .prod-content {  
+        grid-auto-rows: 18rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(40%, 25rem), 1fr));
+    }
+
+    .nosotros-info {
+        padding: 10px 30px;
+    }
+
+    .nosotros-title {
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    .nosotros-info p {
+        font-size: 18px;
+    }
+
+    .nosotros-btn {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .nosotros-btn h3 {
+        font-size: 10px;
+    }
+
+    .nosotros-img img {
+        max-width: 100%;
+    }
+
+    .prod-presentacion {
+        display: grid;
+        gap: 0rem;
+        grid-auto-flow: dense;
+        grid-auto-rows: 20rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    }
+
+    .showroom {
+        margin-top: 50px !important;
+        height: fit-content;
+        gap: 5rem;
+        padding: 30px;
+    }
+
+    .showroom-ubi iframe {
+        max-width: 100%;
+    }
+
+    .showroom-info h3 {
+        font-size: 25px;
+    }
+
+    .footer-info {
+        height: fit-content;
+        padding: 20px 60px;
+    }
+
+    .footer-info h3 {
+        margin-top: 20px;
+    }
+
+    .footer-info-secundaria ul li {
+        margin-bottom: 13px;
+    }
+
+    .card-tres {
+        width: 60%;
+        padding: 6px;
+    }
+
+    .select-productos{
+        display: none;
+    }
+    .select-productos-responsive {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+    .header-title h5 {
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+
+@media (max-width:425px) {
+    .prod-content {
+        grid-template-columns: repeat(auto-fit, minmax(min(50%, 25rem), 1fr));
+        margin-bottom: 80px;
+    }
+    .card-text {
+        margin-bottom: 20px;
+    }
+    
+}
